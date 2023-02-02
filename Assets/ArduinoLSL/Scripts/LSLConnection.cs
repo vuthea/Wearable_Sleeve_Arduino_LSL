@@ -14,7 +14,7 @@ namespace HCIUD.ArduinoLSL
 
         public override List<string> ChannelNames
         {
-            get { return new List<string>(new string[] { "CH1"}); } //"Time",
+            get { return new List<string>(new string[] { "CH1"}); } 
         }
 
 
@@ -32,9 +32,7 @@ namespace HCIUD.ArduinoLSL
         {
             if(StartLog)
             {
-                Debug.Log(outlet.ToString());
-
-                //var _date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.ff");
+                //Debug.Log(outlet.ToString());
 
                 sample[0] = ResistanceChanges;
 
